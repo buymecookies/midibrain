@@ -30,17 +30,19 @@ From left to right<br>
 connector 1 <br>
 1 gnd <br>
 2 5v <br>
-3 io1/rx <br>
-4 io0/tx <br>
+3 io1/rx (serial tx/digital in/interupt) <br>
+4 io0/tx (serial rx/digital in/interupt) <br>
 <br>
 connector 2 <br>
 1 gnd <br>
 2 5v <br>
-3 A1<br>
-4 A0<br>
+3 A1(analog in/digital in) <br>
+4 A0(analog in/digital in) <br>
 <br>
 connector 3 <br>
 1 gnd <br>
 2 5v <br>
-3 io3<br>
-4 io2<br>
+3 io3(i2c SCL/digital in/pwm out/interupt)<br>
+4 io2(i2c SDA/digital in/interupt)<br>
+
+Interupt is needed for encoder
