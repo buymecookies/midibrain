@@ -19,19 +19,19 @@ The 4 gpio used for this module are: <br>
 
 channel 1<br>
 gpio: 10<br>
-midi note:1 <br>
+midi note:A1 <br>
 <br>
 channel 2<br>
 gpio: 16<br>
-midi note:2 <br>
+midi note:A2 <br>
 <br>
 channel 3<br>
 gpio: 14 <br>
-midi note:3 <br>
+midi note:A3 <br>
 <br>
 channel 4 <br>
 gpio: 15<br>
-midi note:4 <br>
+midi note:A4 <br>
 <br>
 
 
