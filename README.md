@@ -45,19 +45,18 @@ From left to right<br>
 connector 1 --standard 2 x button-- <br>
 1: gnd <br>
 2: 5v <br>
-3: io1/rx (serial tx/digital in/interupt) <br>
-4: io0/tx (serial rx/digital in/interupt) <br>
+3: Gpio: io1/rx Midi: B1 (serial tx/digital in/interupt) <br>
+4: Gpio: io0/tx Midi: B2 (serial rx/digital in/interupt) <br>
 <br>
 connector 2 --standard 2 x analog in-- <br>
 1: gnd <br>
 2: 5v <br>
-3: A1(analog in/digital in) <br>
-4: A0(analog in/digital in) <br>
+3: gpio: A1 Midi: cc1 (analog in/digital in) <br>
+4: Gpio: A0 Midi: c10 (analog in/digital in) <br>
 <br>
 connector 3 --standard 1x encoder in-- <br>
 1: gnd <br>
 2: 5v <br>
-3: io3(i2c SCL/digital in/pwm out/interupt)<br>
-4: io2(i2c SDA/digital in/interupt)<br>
-
+3: Gpio: io3 Midi: cc pan (i2c SCL/digital in/pwm out/interupt)<br>
+4: Gpio: io2 Midi: cc pan (i2c SDA/digital in/interupt)<br>
 Interupt is needed for encoder
