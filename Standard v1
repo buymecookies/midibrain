@@ -39,7 +39,15 @@
 // Instantiate a MIDI over USB interface.
 USBMIDI_Interface midi;
 
+
 // Instantiate a NoteButton object
+
+CCAbsoluteEncoder enc {
+  {2, 3},       // pins
+  MIDI_CC::Pan, // MIDI address (CC number + optional channel)
+  1,            // optional multiplier if the control isn't fast enough
+};
+
 NoteButton remote1 {
   14,                             // Push button on pin 5
   {MIDI_Notes::A[1], Channel_1}, // Note C4 on MIDI channel 1
@@ -58,6 +66,23 @@ NoteButton remote3 {
 NoteButton remote4 {
   16,                             // Push button on pin 5
   {MIDI_Notes::A[4], Channel_1}, // Note C4 on MIDI channel 1
+};
+
+NoteButton con1  {
+  0,                             // Push button on pin 5
+  {MIDI_Notes::B[1], Channel_1}, // Note C4 on MIDI channel 1
+};
+
+NoteButton con2 {
+  1,                             // Push button on pin 5
+  {MIDI_Notes::B[2], Channel_1}, // Note C4 on MIDI channel 1
+};
+
+CCPotentiometer potentiometers[] {
+  {A0,        // Analog pin connected to potentiometer 1
+   0x1},     // Controller number of the first potentiometer
+  {A1,        // Analog pin connected to potentiometer 2
+   0x10},     // Controller number of the second potentiometer
 };
 
 void setup() {
