@@ -1,6 +1,7 @@
 # midibrain
 all info about our midi brain
 
+![final product](https://github.com/buymecookies/midibrain/assets/75701354/ffa3f018-6e46-451a-be11-b2918a3ee354)
 
 The midi brain is based on an arduino pro micro. 
 This shield will provide supercolider with io trough midi for our projects 
@@ -21,6 +22,7 @@ channel 2: gpio 16 <br>
 channel 3 gpio 14 <br>
 channel 4 gpio 15 <br>
 <br>
+
 
 ## External connections 
 This module contains 3 external gpio connectors each connector has 4 pins <br>
