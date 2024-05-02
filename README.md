@@ -15,3 +15,28 @@ this module contains a 4 ch 433 mhz reciever.
 
 The 4 gpio used for this module are: 
 
+channel 1: gpio 10 
+channel 2: gpio 16
+channel 3 gpio 14
+channel 4 gpio 15
+
+This module contains 3 external gpio connectors each connector has 4 pins 
+
+From left to right
+connector 1 
+1 gnd 
+2 5v 
+3 io1/rx
+4 io0/tx
+
+connector 2 
+1 gnd 
+2 5v 
+3 A1
+4 A0
+
+connector 3 
+1 gnd 
+2 5v 
+3 io3
+4 io2
