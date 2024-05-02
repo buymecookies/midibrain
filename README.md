@@ -17,10 +17,10 @@ this module contains a 4 ch 433 mhz reciever.
 
 The 4 gpio used for this module are: <br>
 
-channel 1: gpio 10 <br>
-channel 2: gpio 16 <br>
-channel 3 gpio 14 <br>
-channel 4 gpio 15 <br>
+channel 1: gpio 10 midi note: <br>
+channel 2: gpio 16 midi note: <br>
+channel 3 gpio 14 midi note: <br>
+channel 4 gpio 15 midi note: <br>
 <br>
 
 
@@ -31,20 +31,20 @@ This module contains 3 external gpio connectors each connector has 4 pins <br>
 
 From left to right<br>
 <br>
-connector 1 <br>
+connector 1 --standard 2 x button-- <br>
 1: gnd <br>
 2: 5v <br>
 3: io1/rx (serial tx/digital in/interupt) <br>
 4: io0/tx (serial rx/digital in/interupt) <br>
 <br>
-connector 2 <br>
+connector 2 --standard 2 x analog in-- <br>
 1: gnd <br>
 2: 5v <br>
 3: A1(analog in/digital in) <br>
 4: A0(analog in/digital in) <br>
 <br>
-connector 3 <br>
-:1 gnd <br>
+connector 3 --standard 1x encoder in-- <br>
+1: gnd <br>
 2: 5v <br>
 3: io3(i2c SCL/digital in/pwm out/interupt)<br>
 4: io2(i2c SDA/digital in/interupt)<br>
