@@ -17,13 +17,21 @@ this module contains a 4 ch 433 mhz reciever.
 
 The 4 gpio used for this module are: <br>
 
-channel 1
+channel 1<br>
 gpio: 10<br>
-midi note: <br>
+midi note:1 <br>
 <br>
-channel 2: gpio 16 midi note: <br>
-channel 3 gpio 14 midi note: <br>
-channel 4 gpio 15 midi note: <br>
+channel 2<br>
+gpio: 16<br>
+midi note:2 <br>
+<br>
+channel 3<br>
+gpio: 14 <br>
+midi note:3 <br>
+<br>
+channel 4 <br>
+gpio: 15<br>
+midi note:4 <br>
 <br>
 
 
