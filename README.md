@@ -13,7 +13,7 @@ this module contains a 4 ch 433 mhz reciever.
 
 ![alt text](https://hobbycomponents.com/2346-large_default/4-channel-433mhz-wireless-receiver-with-remote-fob.jpg)
 
-The 4 gpio used for this module are: 
+The 4 gpio used for this module are: <br>
 
 channel 1: gpio 10 <br>
 channel 2: gpio 16 <br>
@@ -23,20 +23,21 @@ channel 4 gpio 15 <br>
 This module contains 3 external gpio connectors each connector has 4 pins 
 <br>
 From left to right<br>
+<br>
 connector 1 <br>
 1 gnd <br>
 2 5v <br>
 3 io1/rx <br>
 4 io0/tx <br>
-
-connector 2 
-1 gnd 
-2 5v 
-3 A1
-4 A0
-
-connector 3 
-1 gnd 
-2 5v 
-3 io3
-4 io2
+<br>
+connector 2 <br>
+1 gnd <br>
+2 5v <br>
+3 A1<br>
+4 A0<br>
+<br>
+connector 3 <br>
+1 gnd <br>
+2 5v <br>
+3 io3<br>
+4 io2<br>
