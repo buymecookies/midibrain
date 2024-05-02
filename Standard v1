@@ -4,21 +4,6 @@
  * etc. It can control almost any push button control in your DAW software.
  *
  * @boards  AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32, ESP8266
- * 
- * Connections
- * -----------
- * 
- * - 5: momentary push button (to ground)
- * 
- * The internal pull-up resistor for the button will be enabled automatically.
- * 
- * Behavior
- * --------
- * 
- * - When the button on pin 5 is pressed, a MIDI Note On message is sent for
- *   note C4.
- * - When the button on pin 5 is released, a MIDI Note Off message is sent for 
- *   note C4.
  *
  * Note numbers use the [Scientific Pitch Notation system](https://en.wikipedia.org/wiki/Scientific_pitch_notation),
  * where <b>A<sub>4</sub></b> is 440 Hz, and <b>C<sub>-1</sub></b> is 8.1758 Hz.
@@ -42,46 +27,52 @@ USBMIDI_Interface midi;
 
 // Instantiate a NoteButton object
 
+// connector 3
 CCAbsoluteEncoder enc {
   {2, 3},       // pins
   MIDI_CC::Pan, // MIDI address (CC number + optional channel)
   1,            // optional multiplier if the control isn't fast enough
 };
 
+// wireless remote
 NoteButton remote1 {
-  14,                             // Push button on pin 5
-  {MIDI_Notes::A[1], Channel_1}, // Note C4 on MIDI channel 1
+  14,                             // Push button on pin 14
+  {MIDI_Notes::A[1], Channel_1}, // Note a1 on MIDI channel 1
 };
 
 NoteButton remote2 {
-  10,                             // Push button on pin 5
-  {MIDI_Notes::A[2], Channel_1}, // Note C4 on MIDI channel 1
+  10,                             // Push button on pin 10
+  {MIDI_Notes::A[2], Channel_1}, // Note a2 on MIDI channel 1
 };
 
 NoteButton remote3 {
-  15,                             // Push button on pin 5
-  {MIDI_Notes::A[3], Channel_1}, // Note C4 on MIDI channel 1
+  15,                             // Push button on pin 15
+  {MIDI_Notes::A[3], Channel_1}, // Note a3 on MIDI channel 1
 };
 
 NoteButton remote4 {
-  16,                             // Push button on pin 5
-  {MIDI_Notes::A[4], Channel_1}, // Note C4 on MIDI channel 1
+  16,                             // Push button on pin 16
+  {MIDI_Notes::A[4], Channel_1}, // Note a4 on MIDI channel 1
 };
 
+//connector 1
+
 NoteButton con1  {
-  0,                             // Push button on pin 5
-  {MIDI_Notes::B[1], Channel_1}, // Note C4 on MIDI channel 1
+  0,                             // Push button on pin 0
+  {MIDI_Notes::B[1], Channel_1}, // Note b1 on MIDI channel 1
 };
 
 NoteButton con2 {
-  1,                             // Push button on pin 5
-  {MIDI_Notes::B[2], Channel_1}, // Note C4 on MIDI channel 1
+  1,                             // Push button on pin 1
+  {MIDI_Notes::B[2], Channel_1}, // Note b2 on MIDI channel 1
 };
 
+//connector 2
+
 CCPotentiometer potentiometers[] {
-  {A0,        // Analog pin connected to potentiometer 1
+  {A0,        // Analog pin connected to potentiometer A0
    0x1},     // Controller number of the first potentiometer
-  {A1,        // Analog pin connected to potentiometer 2
+  {A1,        // Analog pin connected to potentiometer A1
    0x10},     // Controller number of the second potentiometer
 };
 
