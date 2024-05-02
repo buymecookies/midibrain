@@ -8,7 +8,7 @@ This shield will provide supercolider with io trough midi for our projects
 
 ![alt text](https://www.bitsandparts.nl/partpics/0001FUNDUINOMINILEONARDO%5E3_hi.jpg)
 
-##External connections 
+## External connections 
 
 this module contains a 4 ch 433 mhz reciever. 
 
