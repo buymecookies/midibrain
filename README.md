@@ -8,7 +8,7 @@ This shield will provide supercolider with io trough midi for our projects
 
 ![alt text](https://www.bitsandparts.nl/partpics/0001FUNDUINOMINILEONARDO%5E3_hi.jpg)
 
-## External connections 
+## remote control
 
 this module contains a 4 ch 433 mhz reciever. 
 
@@ -21,6 +21,8 @@ channel 2: gpio 16 <br>
 channel 3 gpio 14 <br>
 channel 4 gpio 15 <br>
 <br>
+
+## External connections 
 This module contains 3 external gpio connectors each connector has 4 pins 
 <br>
 From left to right<br>
